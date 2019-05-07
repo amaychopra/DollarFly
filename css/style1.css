@@ -1,0 +1,198 @@
+/*Bootstrap overrite*/
+/*Navigation menu*/
+.navbar {
+  background-color: transparent;
+  width: 100%;
+}
+
+.fas, .fa-question-circle, .fa-user-circle, .fa-wallet {
+  color: #034223; /*Elements in menu*/
+}
+
+.fas:hover {
+  color: black;
+}
+
+.navbar {
+  background-color: #fff;
+}
+
+.navbar-light .navbar-nav .active>.nav-link {
+  color: #034223;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #034223;
+}
+
+.site-wrap {
+  background-color: #ecedee;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.section-divider {
+  height: 0;
+  margin: 0.5rem 0;
+  overflow: hidden;
+  border-top: 1px solid #034223;
+}
+
+.site-color {
+  color: #034223;
+}
+
+.site-color-white {
+  color: #fff;
+}
+
+.site-background-color {
+  background-color: #034223;
+  border-color: #034223;
+}
+
+.site-background-color-border {
+  border-color: #034223;
+}
+
+.site-text-primary {
+  color: #034223 !important;
+}
+
+.bg-primary {
+  background-color: #034223 !important;
+}
+
+.site-bg-primary {
+  background-color: #034223 !important;
+}
+
+.site-section-heading {
+  font-size: 2em;
+}
+
+.btn-primary:hover {
+  background-color: black;
+  border-color: black;
+}
+
+.rewardProgressInitial {
+  width: 10%;
+}
+
+/*This will create the speech dialog box for the medium or higher sized screens*/
+.speech {
+  position: relative;
+  font-family: arial;
+  font-size: 1.1em;
+  background: #034223;
+  color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 400px;
+}
+
+.bottom:after {
+  /* [THESE WILL CREATE THE TRIANGLE] */
+  content: '';
+  border: 20px solid transparent;
+  border-top-color: #034223;
+  border-bottom: 0;
+  /* [THESE WILL POSITION THE TRIANGLE] */
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  margin-left: -20px;
+}
+
+.top:after {
+  content: '';
+  border: 20px solid transparent;
+  border-bottom-color: #034223;
+  border-top: 0;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  margin-left: -20px;
+}
+
+.left:after {
+  content: '';
+  border: 20px solid transparent;
+  border-right-color: #034223;
+  border-left: 0;
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  margin-top: -20px;
+}
+
+#speech .right:after {
+  content: '';
+  border: 20px solid transparent;
+  border-left-color: #034223;
+  border-right: 0;
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  margin-top: -20px;
+}
+
+.site-bg-card {
+  position: relative;
+  border-radius: 10px;
+}
+
+.site-bg-card-footer {
+  text-align: center;
+}
+
+.site-card {
+  position: relative;
+  border-radius: 10px;
+}
+
+.site-card-header {
+  height: 18%;
+}
+
+.site-card-content {
+  height: 62%;
+}
+
+.site-card-footer {
+  height: 20%;
+  text-align: center;
+}
+
+.block-testimony blockquote {
+  font-size: 1rem !important;
+  font-style: italic;
+}
+
+h2, .h2 {
+  font-size: 3rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .site-card {
+    height: 480px
+  }
+}
+
+.adminQuery {
+  position: relative;
+  font-family: arial;
+  font-size: 1.1em;
+  background: #034223;
+  color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 800px;
+}
+
+.size-mobile{
+  padding-right: 20px; 
+}
