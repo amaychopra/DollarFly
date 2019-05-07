@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>DollarFly</title>
+  <link rel="shortcut icon" href="images/Logo.gif" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Work+Sans:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/style1.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
+
+
+
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+  <link rel="stylesheet" href="css/aos.css">
+
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body style="background-image: url('images/bg.jpg');">
+
+  <div class="site-wrap">
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div> <!-- .site-mobile-menu -->
+
+    <div class="site-navbar-wrap js-site-navbar bg-white">
+      <div class="site-navbar bg-light">
+        <div class="row align-items-center">
+          <div class="col-5" id="navbar-row-logo">
+            <div class="row align-items-center ml-2">
+              <div class="d-inline-block">
+                <a class="navbar-brand" href="#">
+                  <img src="images/Logo.gif" width="70" class="d-inline-block align-top" alt="">
+                </a>
+              </div>
+
+              <div class=" d-none d-md-block">
+                <h2 class="site-color ">DollarFly</h2>
+              </div>
+
+            </div>
+          </div>
+          <div class="d-md-none" id="navbar-row-search">
+            <div class=" text-center">
+              <h2 class="site-color">DollarFly</h2>
+            </div>
+          </div>
+          <div class="col-7" id="navbar-row-menu">
+            <nav class="site-navigation text-right" role="navigation">
+              <div class="container">
+                <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+                <div id="signedIn" class="d-none">
+                <ul id= "signedInList" class="site-menu js-clone-nav d-none d-lg-block">
+                  <li><a href="sendmoney.html">Send Money</a></li>
+                  <li><a href="referFriend.html">Refer a Friend</a></li>
+                  <li ><a><span id='logOutBtn' class='d-inline-block p-3 text-white btn btn-primary site-background-color' onclick='logout();'>Sign out</span></a></li>
+                </ul>
+              </div>
+              <div id="signedOut">
+                  <ul id= "signedOutList"  class="site-menu js-clone-nav d-none d-lg-block">
+                    <li><a href="sendmoney.html">Send Money</a></li>
+                    <li><a href="referFriend.html">Refer a Friend</a></li>
+                    <li id="login"><a href="login.html"><span class="d-inline-block p-3 text-white btn btn-primary site-background-color">Login</span></a></li>
+                    <li  id="signup"><a href="signup.html"><span id="signup" class="d-inline-block p-3 text-white btn btn-primary site-background-color">SignUp</span></a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide-one-item home-slider owl-carousel">
+      <div class="site-blocks-cover inner-page overlay" style="background-image: url(images/background-image_2.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6" data-aos="fade">
+              <h1 class="font-secondary font-weight-bold text-uppercase">Pay on the Fly with DollarFly</h1>
+              <span class="caption d-block text-white">Your Friendly eWallet</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-blocks-cover inner-page overlay" style="background-image: url(images/Elderly-man-with-smartphone-small-1.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
+        <div class="container">
+          <div class="row align-items-center ">
+            <div class="col-md-7 " data-aos="fade">
+              <h1 class="font-secondary font-weight-bold text-uppercase">Easy Payment Services To Meet Your Needs</h1>
+              <span class="caption d-block text-white">You Will Love Our Services</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <span class="caption d-block mb-2 font-secondary font-weight-bold">Products &amp; Services</span>
+            <h2 class="site-section-heading text-uppercase text-center font-secondary">Get to Know Us Better</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 block-13 nav-direction-white">
+            <div class="nonloop-block-13 owl-carousel">
+              <div class="media-image" id="freeTransaction">
+                <img src="images/send_money_resized.jpg" alt="Image" class="img-fluid">
+                <div class="media-image-body">
+                  <h2 class="font-secondary text-uppercase">Free Transactions</h2>
+                  <p>DollarFly for sending money using your DollarFly balance, bank account or prepaid card is free. We
+                    waive off the fees for you. Receiving money and making purchases in other apps is also free with
+                    DollarFly. Login or SignUp to use our services! </p>
+                  <p><a href="login.html" class="btn btn-primary text-white px-4 site-background-color"><span class="caption">Login</span></a></p>
+                </div>
+              </div>
+              <div class="media-image" id="referFriend">
+                <img src="images/friends-on-mobile.png" alt="Image" class="img-fluid">
+                <div class="media-image-body">
+                  <h2 class="font-secondary text-uppercase">Refer Friends</h2>
+                  <p>Referring friend is simple! Get your friends to use DollarFly eWallet and you both earn rewards.
+                    Sign in to your eWallet to access referral link and share it with your friends to find out your
+                    surprise referral cashback award. Get going and earn quick!</p>
+                  <p><a href="#" class="btn btn-primary text-white px-4 site-background-color"><span class="caption">Refer Friends</span></a></p>
+                </div>
+              </div>
+              <div class="media-image" id="sendMoney">
+                <img src="images/SendMoney.jpg" alt="Image" class="img-fluid">
+                <div class="media-image-body">
+                  <h2 class="font-secondary text-uppercase">Send Money</h2>
+                  <p>With DollarFly you can send money from your eWallet to anyone else within seconds. Identify the
+                    person you want to send money to and transfer quickly with a few clicks. Don't worry, we will take
+                    care of securely debiting and crediting money. Happy sending!
+                  </p>
+                  <p><a href="sendmoney.html" class="btn btn-primary text-white px-4 site-background-color"><span class="caption">Send Money</span></a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="site-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-12 text-center">
+            <span class="caption d-block mb-2 font-secondary font-weight-bold">Outstanding Services</span>
+            <h2 class="site-section-heading text-uppercase text-center font-secondary">Why Choose Us</h2>
+          </div>
+        </div>
+        <div class="row border-responsive">
+          <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 border-right">
+            <div class="text-center">
+              <span class="flaticon-customer-service display-4 d-block mb-3 text-primary site-text-primary"></span>
+              <h3 class="text-uppercase h4 mb-3">24/7 Support</h3>
+              <p>We are here for you, all the time. Contact us for any help that you need.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 border-right">
+            <div class="text-center">
+              <span class="flaticon-group display-4 d-block mb-3 text-primary site-text-primary"></span>
+              <h3 class="text-uppercase h4 mb-3">Trusted People</h3>
+              <p>DollarFly values your trust and promises to deliver securely, always.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 border-right">
+            <div class="text-center">
+              <span class="flaticon-medal display-4 d-block mb-3 text-primary site-text-primary"></span>
+              <h3 class="text-uppercase h4 mb-3">5 Years Experience</h3>
+              <p>Founded in 2014, we have been successfully servicing your needs since 5 years.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+            <div class="text-center">
+              <span class="flaticon-agreement display-4 d-block mb-3 text-primary site-text-primary"></span>
+              <h3 class="text-uppercase h4 mb-3">Join Us</h3>
+              <p>Become a customer or join us as an employee. We cannot wait to get to know you.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-section" style="background-image: url('images/topography.png'); background-attachment: fixed">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-12">
+            <h2 class="site-section-heading text-center text-uppercase">Our Team</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-4 text-center">
+            <img src="images/meghal-pic.jpeg" alt="Image" class="img-fluid rounded-circle w-25 mb-4">
+            <h2 class="h5 ">Meghal Gupta</h2>
+            <span class="d-block mb-4">Cheif Executive Officer</span>
+          </div>
+          <div class="col-md-4 text-center">
+            <img src="images/Himanshi_cropped.jpg" alt="Image" class="img-fluid rounded-circle w-25 mb-4">
+            <h2 class="h5 ">Himanshi Khandelwal</h2>
+            <span class="d-block mb-4">Product Manager</span>
+          </div>
+          <div class="col-md-4 text-center">
+            <img src="images/chopra_amay.jpg" alt="Image" class="img-fluid rounded-circle w-25 mb-4">
+            <h2 class="h5">Amay Chopra</h2>
+            <span class="d-block mb-4">Cheif Technology Officer</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="site-section block-14 bg-light nav-direction-white">
+
+      <div class="container">
+
+        <div class="row mb-5">
+          <div class="col-md-12">
+            <h2 class="site-section-heading text-center text-uppercase">Testimonies</h2>
+          </div>
+        </div>
+
+        <div class="nonloop-block-14 owl-carousel">
+
+          <div>
+            <div class="d-block block-testimony w-75 mx-auto text-center">
+              <div class="person w-25 mx-auto mb-4">
+                <img src="images/person_1.jpg" alt="Image" class="img-fluid rounded-circle">
+              </div>
+              <div>
+                <h2 class="h5 mb-4">Beck Woodruff</h2>
+                <blockquote>&ldquo;I have been using DollayFly for over a year now and this is the best decision I ever
+                  made regarding mobile payments. It is robust, simple to use, convenient and quick way to integrate
+                  with mobile money payment Systems!&rdquo;</blockquote>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="d-block block-testimony w-75 mx-auto text-center">
+              <div class="person w-25 mx-auto mb-4">
+                <img src="images/person_2.jpg" alt="Image" class="img-fluid rounded-circle">
+              </div>
+              <div>
+                <h2 class="h5 mb-4">Jun Mars</h2>
+                <blockquote>&ldquo;With DollarFly I am now taking care of all the financial matters of my college and
+                  living expenses. I highly recommend their services and will gladly choose them over any other company
+                  offering similar services!&rdquo;</blockquote>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="d-block block-testimony w-75 mx-auto text-center">
+              <div class="person w-25 mx-auto mb-4">
+                <img src="images/person_3.jpg" alt="Image" class="img-fluid rounded-circle">
+              </div>
+              <div>
+                <h2 class="h5 mb-4">Shane Holmes</h2>
+                <blockquote>&ldquo;None of my queries ever go unanswered and I am more than happy to recommend their
+                  services to anyone because I have zero complaints with my mobile payments through DollarFly. Kudos to
+                  team DollarFly!&rdquo;</blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="py-5 bg-primary site-bg-primary">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-5 text-center text-md-left mb-3 mb-md-0">
+            <h2 class="text-uppercase text-white mb-0">Your friendly eWallet</h2>
+          </div>
+          <div class="col-md-4 ml-auto text-center text-md-left ">
+            
+            <h4 style="color:white; display:inline">Connect with us at</h4>
+            <i class=" m-2 fab  fa-facebook-f fa-3x" style="color:white; display:inline"></i>
+            <a href="#"><i class=" ml-2 fab fa-instagram fa-3x"style="color:white; display:inline"></i></a>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container">
+
+
+        <div class="row">
+          <div class="col-md-5 mb-3">
+            <h3 class="footer-heading mb-2 text-white">About</h3>
+            <p class="pt-3">DollarFly is North America’s fastest growing e-wallet service headquartered at College Station, Texas. It
+              was established in 2014 with a vision of providing a trustworthy platform that can keep money safe and
+              enable transfer of funds to others.</p>
+          </div>
+          <div class="col-md-4 mb-3">
+            <h3 class="footer-heading mb-4 text-white">Quick Menu</h3>
+            <ul class="list-unstyled">
+              <li><a href="sendmoney.html">Send Money</a></li>
+              <li><a href="referFriend.html">Refer A Friend</a></li>
+              <li><a href="login.html">Login</a></li>
+              <li><a href="signup.html">SignUp</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h3 class="footer-heading mb-4 text-white">Social Icons</h3>
+            <p>
+              <a href="https://www.facebook.com/DollarFly-235395173982289/?modal=admin_todo_tour" class="pb-2 pr-2 pl-0"><span class="icon-facebook"></span></a>
+              <a href="#" class="p-2"><span class="icon-twitter"></span></a>
+              <a href="https://www.instagram.com/paywithdollarfly/" class="p-2"><span class="icon-instagram"></span></a>
+
+            </p>
+          </div>
+        </div>
+
+        <div class="row pt-5 mt-4 text-center">
+          <div class="col-md-12">
+            <p>
+
+              Copyright &copy;
+              <script>
+                document.write(new Date().getFullYear());
+              </script> All Rights Reserved | Made with <i class="icon-heart text-danger" aria-hidden="true"></i> by Team 12</a>
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+  <script src="js/dollarfly.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    $(document).ready(function() {
+      var windowWidth = $(window).width();
+      
+      if ($(window).width() < 768) {
+        $("#navbar-row-logo").removeClass("col-5").addClass("col-3");
+        $("#navbar-row-search").addClass("col-6");
+        $("#navbar-row-menu").removeClass("col-7").addClass("col-2");
+
+      }
+    
+    });
+  </script>
+</body>
+
+</html>

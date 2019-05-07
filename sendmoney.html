@@ -1,0 +1,261 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>DollarFly</title>
+  <link rel="shortcut icon" href="images/Logo.gif" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Work+Sans:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style1.css">
+  <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+  <script src="js/dollarfly.js"></script>
+  <!--<script src="js/signup.js"></script>-->
+  <script src="js/sendMoney.js"></script>
+
+  <!--<script src="js/userdashboard.js"></script>-->
+</head>
+
+<body style="background-image: url('images/bg.jpg');">
+
+  <div class="site-wrap">
+    <header id="header">
+      <div class="site-mobile-menu d-sm-none">
+        <div class="site-mobile-menu-header">
+          <div class="site-mobile-menu-close mt-3">
+            <span class="icon-close2 js-menu-toggle"></span>
+          </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+      </div> <!-- .site-mobile-menu -->
+
+      <!--Top Navigation of the Page-->
+      <nav class="site-navbar-wrap js-site-navbar bg-white " id="nav-bar">
+        <div class="site-navbar bg-light pr-3 pl-4">
+          <div class="row align-items-center">
+
+            <div class="col-2" id="navbar-row-logo">
+              <a class="navbar-brand" href="#">
+                <img src="images/Logo.gif" width="70" class="d-inline-block align-top" alt="">
+              </a>
+            </div>
+
+            <div class="col-4 text-right" id="navbar-row-search">
+              <div class="d-none d-md-block">
+                <form class="form-inline my-2 my-lg-0 mr-md-auto">
+                  <input class="form-control w-100 mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                </form>
+              </div>
+              <div class="d-md-none  text-center">
+                <h2 class="site-color">DollarFly</h2>
+              </div>
+            </div>
+            <div class="col-6 pl-0" id="navbar-row-menu">
+                <nav class="site-navigation text-right" role="navigation">
+                  <div class="container">
+                    <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+  
+                    <ul class="site-menu js-clone-nav  pl-0 d-none d-lg-block">
+                      <li><a href="userdashboard.html">Summary</a></li>
+                      <li class="active"><a href="sendmoney.html">Send</a></li>
+                      <li><a href="seemore.html">Activity</a></li>
+                      <li><a href="referFriend.html">Offers</a></li>
+                      <li>
+                        <a href="addmoney.html">
+                          <span class="d-none d-md-block">
+                            <i class="fas fa-wallet fa-lg site-color "></i>
+                          </span>
+                          <span class="d-md-none">
+                            Add Money
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a><span id="logOutBtn" class="d-inline-block p-3 text-white btn btn-primary site-background-color" onclick="logout()">Sign out</span></a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+          </div>
+        </div>
+      </nav>
+
+    </header>
+
+    <!--Main Content of the website-->
+    <section class="site-section mt-3 py-3 ">
+      <div class="row">
+
+        <div class="col-9" id="side-card-section">
+
+          <div class=" my-3 mr-3 ml-2 ml-md-5 bg-white shadow site-card text-center" id="sendMoneySection">
+            <div class="site-card-header">
+              <h2 class="p-3 site-color text-center">Send Money </h2>
+              <div class="section-divider"></div>
+            </div>
+            <div class="site-card-content px-3 text-center">
+              <div class="row py-md-4 text-center">
+                <div class="col-4 col-md-2 ml-md-5">
+                  <h3 class="site-color">Send To</h3>
+                </div>
+                <div class="col-8 ">
+                  <input id="sendTo" type="text" placeholder="Receiver's Email" name="Receiver's Email" required style="width:100%"><br>
+
+                </div>
+
+
+              </div>
+              <div class="row  py-md-4 text-center">
+                <div class="col-4 col-md-2 ml-md-5">
+                  <h3 class="site-color">Amount</h3>
+                </div>
+                <div class="col-8 ">
+                  <input id="sendAmount" type="text" placeholder="$00.00" name="sendAmount" required style="width:100%"><br>
+
+                </div>
+
+
+              </div>
+              <div class="row  py-md-4 text-center">
+                <div class="col-4 col-md-2 ml-md-5">
+                  <h3 class="site-color">Memo</h3>
+                </div>
+                <div class="col-8 ">
+                  <input id="memo" type="text" placeholder="Memo" name="memo" style="width:100%"><br>
+
+                </div>
+
+
+              </div>
+            </div>
+            <div class="site-card-footer">
+              <div class="section-divider"></div>
+              <div class="p-3 text-center ">
+                <a><span id="sendMoneyBtn" href="#" class="btn btn-primary text-white px-4 site-background-color" class="caption" onclick="sendMoney()">Send</span></a>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+        <div class="col-3 pr-5 pl-0 d-none d-md-block">
+          <img src="images/mascot.png" class="img-fluid">
+        </div>
+      </div>
+    </section>
+   <div class="py-5 bg-primary site-bg-primary">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-5 text-center text-md-left mb-3 mb-md-0">
+            <h2 class="text-uppercase text-white mb-0">Your friendly eWallet</h2>
+          </div>
+          <div class="col-md-4 ml-auto text-center text-md-left ">
+            
+            <h4 style="color:white; display:inline">Connect with us at</h4>
+            <a href="https://www.facebook.com/DollarFly-235395173982289/?modal=admin_todo_tour"><i class=" m-2 fab  fa-facebook-f fa-3x" style="color:white; display:inline"></i>
+            <a href="https://www.instagram.com/paywithdollarfly/"><i class=" ml-2 fab fa-instagram fa-3x"style="color:white; display:inline"></i></a>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--Footer if the website-->
+    <footer class="site-footer">
+      <div class="container">
+
+
+        <div class="row">
+          <div class="col-md-5 mb-3 px-4">
+            <h3 class="footer-heading mb-2 text-white">About</h3>
+            <p class="pt-3">DollarFly is North America’s fastest growing e-wallet service headquartered at College
+              Station, Texas. It
+              was established in 2014 with a vision of providing a trustworthy platform that can keep
+              money safe and
+              enable transfer of funds to others.</p>
+          </div>
+          <div class="col-md-4 mb-3 px-4">
+            <h3 class="footer-heading mb-4 text-white">Quick Menu</h3>
+            <ul class="list-unstyled">
+              <li><a href="sendmoney.html">Send Money</a></li>
+              <li><a href="referFriend.html">Refer A Friend</a></li>
+              <li><a href="seemore.html">View Activity</a></li>
+			  <li><a href="seemore.html">Add Money</a></li>			  
+            </ul>
+          </div>
+          <div class="col-md-3 px-4">
+            <h3 class="footer-heading mb-4 text-white">Social Icons</h3>
+             <p>
+              <a href="https://www.facebook.com/DollarFly-235395173982289/?modal=admin_todo_tour" class="pb-2 pr-2 pl-0"><span class="icon-facebook"></span></a>
+              <a href="https://www.instagram.com/paywithdollarfly/" class="p-2"><span class="icon-instagram"></span></a>
+
+            </p>
+          </div>
+        </div>
+        <div class="row pt-5 mt-4 text-center">
+          <div class="col-md-12">
+            <p>
+              Copyright &copy;
+              <script>
+                document.write(new Date().getFullYear());
+              </script> All Rights Reserved | Made
+              with <i class="icon-heart text-danger" aria-hidden="true"></i> by Team 12</a>
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script src="js/moment.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    $(document).ready(function() {
+      var windowWidth = $(window).width();
+      if ($(window).width() < 768) {
+        $("#side-card-section").removeClass("col-9").addClass("col-12");
+        $("#greeting").removeClass("left").addClass("mx-2");
+        $("#recentactivity").removeClass("mr-3 col-5").addClass("mx-2");
+        $("#content-inline").removeClass("row");
+        $("#rewardsummary").removeClass("ml-3 col-5").addClass("mx-2");
+        $("#navbar-row-logo").removeClass("col-2").addClass("col-3");
+        $("#navbar-row-search").removeClass("col-4").addClass("col-7");
+        $("#navbar-row-menu").removeClass("col-6").addClass("col-2");
+
+      }
+    });
+  </script>
+
+</body>
+
+</html>
